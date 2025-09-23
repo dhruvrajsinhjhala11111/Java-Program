@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/orm/hbm">
+    <class name="model.User" table="user">
+        <id name="userId" column="id">
+            <generator class="identity"></generator>
+        </id>
+        <property name="name" column="name"/>
+        <property name="username" column="username"/>
+        <property name="password" column="password"/>
+    </class>
+</hibernate-mapping>
